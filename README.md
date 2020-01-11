@@ -125,10 +125,6 @@ The pipeline to identify the lane boundaries in single images is implemented by 
 ### `project_video.mp4` [link to result](test_videos_output\project_video.mp4)
 ![project_video.mp4](test_videos_output\project_video.gif)
 
-###  `challenge_video.mp4` [link to result](test_videos_output\challenge_video.mp4)
-![challenge_video.mp4](test_videos_output\challenge_video.gif)
-
-
 ## Discussion 
 The approach adopted in current pipeline worked pretty well for `project_video.mp4`. However, it fails to detect the lane boundary correctly in `challenge_video.mp4` and `harder_challenge_video.mp4`. In `challenge_video.mp4`, the pipeline had some problems in case the surface of the roads changes, there is much shadow on the road, lane lines are missing, etc. Besides, the current pipeline might struggle with lines in the middle of the lane between the light and dark asphalt surface. In `harder_challenge_video.mp4`, the pipeline fails to follow the lane boundary since the curature and slope of the road changes fast.
 
